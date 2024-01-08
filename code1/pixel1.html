@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Wallpaper</title>
+    <style>
+        body {
+            margin: 1;
+            padding: 1;
+            background-color: #1a1c1e;
+            align-items: normal;
+        }
+
+        .container {
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pixel-art {
+            width: 320px;
+            height: 180px;
+            background-color: #4a12a3;
+            display: grid;
+            grid-template-columns: repeat(32, 10px);
+            grid-template-rows: repeat(18, 10px);
+            
+
+        }
+        
+
+        .pixel {
+            width: 10px;
+            height: 10px;
+            background-color: #2f13bc;
+        }
+
+        .pixel.active {
+            background-color: #3614b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>hello the world</p>
+        <div class="pixel-art">       
+            <div class="pixel active"></div>
+            <div class="pixel"></div>
+            <div class="pixel active"></div>
+        </div>
+    </div>
+</body>
+</html>
+
